@@ -1,0 +1,113 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%-- Bổ sung để hết warning khi dùng <c:if> --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Đăng nhập hệ thống</title>
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+	background-color: #f7f7f7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.login-form {
+	width: 400px;
+	margin: 0 auto;
+	padding: 30px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.login-form h2 {
+	text-align: center;
+	margin-bottom: 25px;
+	color: #555;
+	font-weight: 300;
+}
+
+.btn-primary {
+	width: 100%;
+	background-color: #00AEEF; /* Màu xanh giống ảnh */
+	border-color: #00AEEF;
+	font-size: 16px;
+	padding: 10px;
+}
+
+.btn-primary:hover {
+	background-color: #0099D4;
+	border-color: #0099D4;
+}
+
+.form-footer {
+	margin-top: 25px;
+	text-align: center;
+	color: #888;
+}
+
+.forgot-password {
+	float: right;
+	line-height: 20px; /* Căn chỉnh cho thẳng hàng checkbox */
+}
+</style>
+</head>
+<body>
+
+	<div class="login-form">
+		<h2>Đăng Nhập Vào Hệ Thống</h2>
+
+		<c:if test="${alert != null}">
+			<div class="alert alert-danger">${alert}</div>
+		</c:if>
+		<form action="<c:url value='/login' />" method="post">
+			
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-user"></i></span>
+					<input type="text" class="form-control" name="username"
+						placeholder="Tài khoản" required>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+					<input type="password" class="form-control" name="password"
+						placeholder="Mật khẩu" required>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="checkbox">
+					<label> <input type="checkbox" name="remember">
+						Nhớ tôi
+					</label> 
+					<a href="#" class="forgot-password">Quên mật khẩu?</a>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary">Đăng nhập</button>
+			</div>
+		</form>
+
+		<div class="form-footer">
+			Nếu bạn chưa có tài khoản trên hệ thống, thì hãy <a href="<c:url value='/register' />">Đăng ký</a>
+		</div>
+	</div>
+
+</body>
+</html>

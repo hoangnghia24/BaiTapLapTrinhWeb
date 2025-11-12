@@ -1,0 +1,5 @@
+package vn.iotstart.sercvice.impl;
+
+public class UserServiceImpl implements UserService {
+
+}

@@ -1,0 +1,5 @@
+package vn.iotstart.sercvice;
+
+public interface UserService {
+
+}

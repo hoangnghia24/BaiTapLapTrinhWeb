@@ -1,0 +1,6 @@
+package vn.iotstart.sercvice.impl;
+
+public class UserServiceImpl implements UserService {
+	UserDao userDao = new UserDaoImpl();
+
+}

@@ -1,0 +1,7 @@
+package vn.iotstart.controller;
+
+@SuppressWarnings("serial")
+@WebServlet(urlPatterns = "/login")
+public class LoginController extends HttpServlet {
+
+}

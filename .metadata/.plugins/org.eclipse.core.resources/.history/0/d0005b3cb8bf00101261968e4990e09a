@@ -1,0 +1,23 @@
+package vn.iotstart.sercvice.impl;
+
+import vn.iotstart.dao.UserDao;
+import vn.iotstart.dao.impl.UserDaoImpl;
+import vn.iotstart.model.User;
+import vn.iotstart.sercvice.UserService;
+
+public class UserServiceImpl implements UserService {
+	UserDao userDao = new UserDaoImpl();
+
+	@Override
+	public User login(String username, String password) {
+	User user = this.get(username);
+	if (user != null && password.equals(user.getPassWord())) {
+	return user;
+	}
+	return null;
+	}
+	@Override
+	public User get(String username) {
+	return userDao.get(username);
+	}
+}

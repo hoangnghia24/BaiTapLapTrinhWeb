@@ -1,0 +1,14 @@
+package vn.iotstart.dao.impl;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import vn.iotstart.dao.UserDao;
+
+public class UserDaoImpl implements UserDao{
+	public Connection conn = null;
+	public PreparedStatement ps = null;
+	public ResultSet rs = null;
+
+}

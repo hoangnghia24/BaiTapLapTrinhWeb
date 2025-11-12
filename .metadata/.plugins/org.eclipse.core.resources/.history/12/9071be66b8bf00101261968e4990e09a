@@ -1,0 +1,34 @@
+package vn.iotstart.sercvice.impl;
+
+// Thêm thư viện này vào
+import org.mindrot.jbcrypt.BCrypt;
+
+import vn.iotstart.dao.UserDao;
+import vn.iotstart.dao.impl.UserDaoImpl;
+import vn.iotstart.model.User;
+import vn.iotstart.sercvice.UserService;
+
+public class UserServiceImpl implements UserService {
+	UserDao userDao = new UserDaoImpl();
+
+	@Override
+	public User login(String username, String password) {
+		User user = this.get(username);
+		
+		// SỬA LẠI:
+		// Không so sánh: password.equals(user.getPassWord())
+		// Dùng BCrypt để kiểm tra mật khẩu đã băm
+		if (user != null && BCrypt.checkpw(password, user.getPassWord())) {
+			// Mật khẩu khớp
+			return user;
+		}
+		
+		// User không tồn tại hoặc sai mật khẩu
+		return null;
+	}
+	
+	@Override
+	public User get(String username) {
+		return userDao.get(username);
+	}
+}

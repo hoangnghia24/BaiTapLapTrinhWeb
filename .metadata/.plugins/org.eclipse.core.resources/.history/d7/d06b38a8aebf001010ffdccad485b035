@@ -1,0 +1,8 @@
+package vn.iotstart.dao.impl;
+
+public class UserDaoImpl implements UserDao{
+	public Connection conn = null;
+	public PreparedStatement ps = null;
+	public ResultSet rs = null;
+
+}

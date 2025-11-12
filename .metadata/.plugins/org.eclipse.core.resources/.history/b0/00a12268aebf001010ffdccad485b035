@@ -1,0 +1,5 @@
+package vn.iotstart.dao;
+
+public class UserDao {
+
+}

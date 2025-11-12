@@ -1,0 +1,6 @@
+package vn.iotstart.dao;
+
+public class UserDao {
+	User get(String username);
+
+}

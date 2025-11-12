@@ -1,0 +1,5 @@
+package vn.iotstart.dao.impl;
+
+public class UserDaoImpl implements UserDao{
+
+}
