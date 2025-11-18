@@ -12,16 +12,18 @@
 	<section name="JavaElementSearchActions">
 	</section>
 	<section name="NewPackageCreationWizard.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="514"/>
+		<item key="DIALOG_X_ORIGIN" value="268"/>
 		<item key="DIALOG_Y_ORIGIN" value="127"/>
-		<item key="DIALOG_WIDTH" value="525"/>
-		<item key="DIALOG_HEIGHT" value="434"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI"/>
+		<item key="DIALOG_WIDTH" value="700"/>
+		<item key="DIALOG_HEIGHT" value="480"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 	<section name="NewPackageWizardPage">
 		<item key="create_package_info_java" value="false"/>
 	</section>
 	<section name="completion_proposal_size">
+		<item key="size.x" value="538"/>
+		<item key="size.y" value="317"/>
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
@@ -33,11 +35,11 @@
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 	<section name="NewClassCreationWizard.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="681"/>
+		<item key="DIALOG_X_ORIGIN" value="268"/>
 		<item key="DIALOG_Y_ORIGIN" value="85"/>
-		<item key="DIALOG_WIDTH" value="574"/>
-		<item key="DIALOG_HEIGHT" value="659"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI"/>
+		<item key="DIALOG_WIDTH" value="700"/>
+		<item key="DIALOG_HEIGHT" value="783"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 	<section name="OptionalMessageDialog.hide.">
 		<item key="org.eclipse.jdt.ui.typecomment.deprecated" value="true"/>
@@ -73,11 +75,11 @@
 		<item key="OmitCallToSuper" value="false"/>
 	</section>
 	<section name="DialogBounds_GenerateConstructorUsingFieldsSelectionDialog">
-		<item key="DIALOG_X_ORIGIN" value="709"/>
+		<item key="DIALOG_X_ORIGIN" value="290"/>
 		<item key="DIALOG_Y_ORIGIN" value="72"/>
-		<item key="DIALOG_WIDTH" value="519"/>
-		<item key="DIALOG_HEIGHT" value="678"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI"/>
+		<item key="DIALOG_WIDTH" value="678"/>
+		<item key="DIALOG_HEIGHT" value="869"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 	<section name="ProblemSeveritiesConfigurationBlock">
 		<item key="expanded0" value="false"/>
@@ -96,5 +98,12 @@
 		<item key="DIALOG_WIDTH" value="578"/>
 		<item key="DIALOG_HEIGHT" value="543"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI"/>
+	</section>
+	<section name="NewEnumCreationWizard.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="138"/>
+		<item key="DIALOG_Y_ORIGIN" value="94"/>
+		<item key="DIALOG_WIDTH" value="700"/>
+		<item key="DIALOG_HEIGHT" value="631"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 </section>

@@ -1,3 +1,9 @@
 INDEX VERSION 1.134
+D:\data\Nam3HocKy1\batch2\LapTrinhWeb\Project\JavaWeb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1807581765.index
+\Practice\src\main\java
 D:\data\Nam3HocKy1\batch2\LapTrinhWeb\Day1\DemoSpringToolSuite\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2675515875.index
 \HelloWorld\src\main\java
+D:\data\Nam3HocKy1\batch2\LapTrinhWeb\Day1\DemoSpringToolSuite\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1807581765.index
+\Practice\src\main\java
+D:\data\Nam3HocKy1\batch2\LapTrinhWeb\Project\JavaWeb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3146471919.index
+\Practice\src\main\java
