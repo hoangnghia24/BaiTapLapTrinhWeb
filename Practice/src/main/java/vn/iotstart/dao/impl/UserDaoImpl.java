@@ -88,32 +88,53 @@ public class UserDaoImpl implements UserDao {
 
 	@Override
 	public User findOne(String username) {
-		String sql = "SELECT * FROM User WHERE username = ?"; // Giả sử tên bảng là Users
+		String sql = "SELECT * FROM User WHERE username = ?";
 		User user = null;
 
 		try {
-			Connection conn =  new DBConnectionMySQL().getConnection(); // Lấy kết nối từ class cha
-			PreparedStatement ps = conn.prepareStatement(sql);
+			conn = new DBConnectionMySQL().getConnection();
+			ps = conn.prepareStatement(sql);
 			ps.setString(1, username);
-			ResultSet rs = ps.executeQuery();
+			rs = ps.executeQuery();
 
 			if (rs.next()) {
 				user = new User();
-				user.setUserId(rs.getInt("id"));
+				// SỬA LẠI TÊN CỘT Ở ĐÂY: "id" -> "userId"
+				user.setUserId(rs.getInt("userId"));
+
 				user.setUsername(rs.getString("username"));
 				user.setEmail(rs.getString("email"));
 				user.setFullname(rs.getString("fullname"));
 				user.setRoleid(rs.getInt("roleid"));
 				user.setStatus(rs.getInt("status"));
-				// Không lấy mật khẩu
+
+				// Nên lấy thêm password để sau này có thể dùng cho việc đổi mật khẩu nếu cần
+				user.setPassword(rs.getString("password"));
 			}
-			rs.close();
-			ps.close();
-			conn.close();
+			// Đừng quên đóng kết nối đúng cách để tránh rò rỉ bộ nhớ
+			// (Khuyên dùng try-with-resources ở phiên bản sau, nhưng hiện tại cứ close thủ
+			// công)
 		} catch (Exception e) {
 			e.printStackTrace();
+		} finally {
+			// Luôn đóng kết nối trong finally hoặc dùng try-catch-resources
+			try {
+				if (rs != null)
+					rs.close();
+			} catch (Exception e) {
+			}
+			try {
+				if (ps != null)
+					ps.close();
+			} catch (Exception e) {
+			}
+			try {
+				if (conn != null)
+					conn.close();
+			} catch (Exception e) {
+			}
 		}
-		return user; // Trả về null nếu không tìm thấy
+		return user;
 	}
 
 	@Override

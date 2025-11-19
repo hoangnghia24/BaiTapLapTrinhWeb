@@ -7,3 +7,5 @@ D:\data\Nam3HocKy1\batch2\LapTrinhWeb\Day1\DemoSpringToolSuite\.metadata\.plugin
 \Practice\src\main\java
 D:\data\Nam3HocKy1\batch2\LapTrinhWeb\Project\JavaWeb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3146471919.index
 \Practice\src\main\java
+D:\data\Nam3HocKy1\batch2\LapTrinhWeb\Project\JavaWeb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1157339917.index
+\Practice\src\main\java
